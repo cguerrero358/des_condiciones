@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+<body>
+  <h3>Ingresa la password</h3>
+  <div>
+    <select name="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <select name="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <select id="" name="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+  </div>
+  <button class="Validador">Validar Password </button>
+  <p class="mensaje"></p>
+  
+  <script>
+
+    const btn = document.querySelector("button")
+    const mensaje = document.querySelector(".mensaje")
+
+    btn.addEventListener("click", () => {
+      const [{ value: a }, { value: b }, { value: c }] = document.querySelectorAll("select")
+      const password = a + b + c
+      if (password == "911") mensaje.innerHTML = "Password 1 correcta"
+      else if (password == "714") mensaje.innerHTML = "Password 2 correcta"
+      else mensaje.innerHTML = "Password incorrecta"
+    })
+
+  </script>
+  <li><a href="../index.html">Volver al Home</a></li>
+</body>
+
+</html>

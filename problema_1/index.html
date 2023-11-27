@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borde Imagen</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    
+    <img src="./assets/imgs/paisaje.jpg" alt="paisaje_italia">
+
+    <script>
+
+        let mostrarBorde = false
+        const img = document.querySelector("img")
+    
+        img.addEventListener("click", () => {
+          if (!mostrarBorde) {
+            img.style.border = "solid red 2px"
+            mostrarBorde = true
+          }
+          else {
+            img.style.border = "none"
+            mostrarBorde = false
+          }
+        })
+    
+      </script>
+       
+       <li><a href="../index.html">Volver al Home</a></li>
+    
+      </body>
+
+   
+
+</html>

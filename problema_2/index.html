@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickers</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    
+    <h2>Puedes llevar hasta 10 stickers en total</h2>
+    <div class="grilla">
+        <div class="boxes">
+            <img src="./assets/imgs/sticker1.jpg" alt="stickers 1">
+            <input name="" id="ctd_1">
+        </div>
+        <div class="boxes">
+            <img src="./assets/imgs/sticker2.jpg" alt="stickers 2">
+            <input name="" id="ctd_2">
+        </div>
+        <div class="boxes">
+            <img src="./assets/imgs/sticker3.png" alt="stickers 3">
+            <input name="" id="ctd_3">
+        </div>
+    </div>
+    <p id="calculo">  </p>
+
+    <button onclick="
+      n1 = Number(document.querySelector('#ctd_1').value)
+      n2 = Number(document.querySelector('#ctd_2').value)
+      n3 = Number(document.querySelector('#ctd_3').value)
+      total_st = n1 + n2 + n3 
+      console.log(total_st);
+      element = document.querySelector('#calculo')
+      if (total_st <= 10){
+        element.innerHTML = 'Llevas ' + total_st + ' stickers'
+      }
+      else {
+        element.innerHTML = 'Llevas demasiados stickers'
+      }
+    "> Verificar </button> 
+
+<li><a href="../index.html">Volver al Home</a></li>
+
+</body>
+</html>
